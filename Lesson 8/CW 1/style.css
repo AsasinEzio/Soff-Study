@@ -1,0 +1,148 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: lightblue;
+
+
+}
+
+h2,
+p {
+    margin: 0;
+    padding: 0;
+
+}
+
+.card {
+    margin: 20px 20px;
+    width: 20%;
+    height: 400px;
+    box-shadow: 0px 0px 7px 0 black;
+
+}
+
+.top {
+    width: 100%;
+    height: 30%;
+    background-color: lightgreen;
+    position: relative;
+}
+
+.plus {
+    width: 50px;
+    height: 50px;
+    background-color: lightgreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 7px 0 black;
+
+
+}
+
+.bottom {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 70%;
+
+    background-color: #fff;
+    position: relative;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid white;
+    position: absolute;
+    top: -50px;
+    left: 30%;
+    box-shadow: 0px 0px 7px 0 black;
+
+}
+
+
+
+p {
+    opacity: .5;
+}
+
+.name {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    top: 80px;
+}
+
+.descr {
+    /* margin-top: 50px; */
+    width: 100%;
+    text-align: center;
+
+}
+
+
+.card:nth-child(2) .top {
+    background-color: #3844f1;
+}
+
+.card:nth-child(2) .plus {
+    background-color: #3844f1;
+}
+
+.card:nth-child(3) .top {
+    background-color: #38f1f1;
+}
+
+.card:nth-child(3) .plus {
+    background-color: #38f1f1;
+}
+
+.card:nth-child(4) .top {
+    background-color: #38c6f1;
+}
+
+.card:nth-child(4) .plus {
+    background-color: #38c6f1;
+}
+
+.card:nth-child(5) .top {
+    background-color: #38e5f1;
+}
+
+.card:nth-child(5) .plus {
+    background-color: #38e5f1;
+}
+
+.card:nth-child(6) .top {
+    background-color: #f138c9;
+}
+
+.card:nth-child(6) .plus {
+    background-color: #f138c9;
+}
+
+.card:nth-child(7) .top {
+    background-color: #f18b38;
+}
+
+.card:nth-child(7) .plus {
+    background-color: #f18b38;
+}
+
+.card:last-child .top {
+    background-color: #f13838;
+}
+
+.card:last-child .plus {
+    background-color: #f13838;
+}
