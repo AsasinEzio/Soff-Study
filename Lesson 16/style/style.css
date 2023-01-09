@@ -9,59 +9,120 @@ h2,
 h3,
 p,
 a {
+    font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
+}
+
+/* Container
+================== */
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
 
 }
 
-.container{
-    width: 1200px;
-}
-.desktop{
+/*   Header 
+================== */
+
+.header__inner {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 100px;
+    margin: 20px auto;
+
 }
 
-nav {
-    width: 90%;
-    height: 100px;
+.header__logo {
     display: flex;
-    /* justify-content: flex-end; */
+    justify-content: center;
     align-items: center;
-    margin-right: 20px;
+    height: 100%;
+    margin: 0 20px;
+
+}
+.header__logo img {
+    height: 60px;
+
+
 }
 
-a {
+.header__inner select {
+    width: 90px;
+    border: none;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
 
-    margin-left: 20px;
+}
+
+.header__inner select:hover {
+    border-bottom: 2px solid red;
+    color: red;
+
+}
+
+
+.header__inner h4 {
     color: black;
-    font-size: 22px;
-    text-decoration: none;
-    opacity: .7;
+}
+
+button {
+    width: 150px;
     height: 50px;
-}
-
-a:hover {
-    border-bottom: 3px solid red;
-    opacity: 1;
-}
-
-
-
-select{
-    height: 40px;
-    border-radius: none;
-    background-color: rgb(255, 216, 242);
     border: none;
+    background-color: rgba(227, 31, 38, 1);
+    border-radius: 5px;
+    color: wheat;
+    font-size: 16px;
 }
-button{
-    height: 40px;
-    width: 100px;
-    background-color: crimson;
-    border: none;
-    margin-left: 20px;
-    cursor: pointer;
+
+/*      Intro 
+===================== */
+
+.intro {
+    height: 100vh;
+
+    background: url("../img/Mask\ Group.png") center no-repeat;
+    background-size: cover;
+
+}
+
+.background__color {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.432);
+}
+
+.intro__content {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    color: white;
+    width: 50%;
+    position: absolute;
+    top: 250px;
+
+
+}
+
+.intro__content h1 {
+    font-size: 56px;
+    font-weight: 600;
+    margin: 20px 0;
+}
+
+.intro__content h2 {
+    font-size: 36px;
+    width: 100%;
+    margin: 20px 0;
+
+}
+
+.intro__content p {
+    font-size: 22px;
+    margin: 0 40px;
 }
