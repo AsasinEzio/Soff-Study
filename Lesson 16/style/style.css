@@ -22,6 +22,7 @@ a {
     max-width: 1200px;
     margin: 0 auto;
 
+
 }
 
 /*   Header 
@@ -44,6 +45,7 @@ a {
     margin: 0 20px;
 
 }
+
 .header__logo img {
     height: 60px;
 
@@ -70,24 +72,31 @@ a {
 }
 
 button {
+
     width: 150px;
     height: 50px;
     border: none;
-    background-color: rgba(227, 31, 38, 1);
+    background-color: #e23f45;
     border-radius: 5px;
-    color: wheat;
+    color: white;
     font-size: 16px;
+    transition-duration: .5s;
+}
+
+button:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    background-color: #d41b21;
+
 }
 
 /*      Intro 
 ===================== */
 
 .intro {
-    height: 100vh;
-
+    height: 110vh;
     background: url("../img/Mask\ Group.png") center no-repeat;
     background-size: cover;
-
 }
 
 .background__color {
@@ -126,3 +135,151 @@ button {
     font-size: 22px;
     margin: 0 40px;
 }
+
+/*   Option
+==================== */
+.option1 {
+    position: relative;
+    width: 100%;
+    height: 200px;
+}
+
+
+.option {
+    width: 1190px;
+    height: 200px;
+    background-color: rgba(33, 51, 66, 1);
+    border-radius: 10px;
+    position: absolute;
+    top: -55%;
+
+}
+
+.option__nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 20%;
+}
+
+.option__nav a {
+    display: flex;
+    justify-content: center;
+    width: 150px;
+    color: white;
+    text-decoration: none;
+
+}
+
+.option__nav a:hover {
+    border-bottom: 2px solid red;
+    padding: 20px 0;
+}
+
+.option__setting {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 94%;
+    height: 50px;
+    background-color: #fff;
+    margin: 20px auto;
+    border-radius: 10px;
+
+}
+
+.option__setting select {
+    font-size: 18px;
+    width: 150px;
+    height: 100%;
+    border: none;
+    border-right: 2px solid rgba(128, 128, 128, 0.63);
+
+
+}
+
+.option__setting select:last-child {
+    width: 300px;
+    border: none;
+
+}
+
+.option__footer {
+    display: flex;
+    width: 94%;
+    height: 30%;
+    position: relative;
+    
+}
+
+.option__footer a {
+    height: 40px;
+    width: 150px;
+    color: #fff;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border: 1px solid rgba(255, 255, 255, 0.541);
+    border-radius: 5px;
+    margin-left: 450px;
+
+}
+
+.option__footer a:first-child {
+    margin-left: 30px;
+    width: 300px;
+
+}
+.option__footer button{
+    height: 42px;
+    position: absolute;
+    right: 0;
+}
+
+.option__footer a img {
+    margin: 10px;
+}
+
+.option__card{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    width: 100%;
+    height: 350px;
+    background-color: rgb(255, 255, 255);
+}
+
+.opt__card1{
+    display: block;
+    width: 250px;
+    height: 150px;
+    background-color: rgb(229, 248, 242);
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+
+}
+
+.opt__card1 p{
+    margin-top: 50px;
+}
+.opt__card1 h1{
+    font-weight: 500;
+}
+
+.opt__card1:last-child h1{
+    font-size: 24px;
+}
+
+.opt__card1:last-child p{
+    margin-top: 30px;
+}
+
+
+
+
+
+
+
