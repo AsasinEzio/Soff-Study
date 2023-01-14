@@ -3,6 +3,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     background-color: rgba(0, 78, 53, 1);
+    
 }
 
 .col-12 a {
@@ -18,12 +19,13 @@ h3,
 p,
 a {
 
-    color: rgba(136, 229, 62, 1);
+    color: rgba(136, 229, 62, 1) !important;
+    
 }
 
 .intro {
     width: 100%;
-    height: 600px;
+    /* height: 600px; */
 }
 
 .intro__header {
@@ -32,22 +34,23 @@ a {
     font-weight: 400;
 }
 
+
+
 /*  New Way
 =============== */
-
-.new__way {
-    height: 640px;
+.sec_right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #C0E8C0;
-}
-
-.new__way h1 {
-    color: rgba(0, 78, 53, 1);
-    width: 60%;
-    font-size: 60px;
-    font-weight: 400;
-    text-align: center;
-}
-
+    padding: 3rem 0;
+  }
+  
+  
+  .sec_right h1 {
+    font-size: 62px;
+    color: #004E35;
+  }
 
 /* Our Mission
 ==================== */
@@ -57,14 +60,15 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 600px;
+    /* height: 600px; */
     width: 100%;
     background-color: rgb(253, 238, 210);
+    padding: 50px 0;
 }
 
 .our__mission h1,
 p {
-    color: rgba(0, 78, 53, 1);
+    color: rgba(0, 78, 53, 1) !important;
 }
 
 .our__mission h1 {
@@ -74,7 +78,10 @@ p {
     text-align: center;
 }
 
+
+
 .our__features {
+    margin-top: 50px;
     border-bottom: 1px solid rgba(0, 78, 53, 1);
 }
 
@@ -94,7 +101,7 @@ p {
 
 .platform {
     width: 100%;
-    height: 1300px;
+    padding-bottom: 50px;
     background-color: rgba(0, 78, 53, 1);
 }
 
@@ -116,6 +123,14 @@ p {
     width: 50%;
 }
 
+@media (max-width: 768px) {
+
+    .platform__header h1 {
+    font-size: 24px;
+    
+}
+}
+
 .platform .mtt {
     width: 28%;
     height: 250px;
@@ -129,7 +144,7 @@ p {
 
 .latest{
     width: 100%;
-    height: 1300px;
+    padding: 50px 0;
     background-color: rgb(253, 238, 210);
     display: flex;
     justify-content: space-around;
@@ -151,8 +166,8 @@ p {
 
 }
 
-.latest__card h1,h2,p{
-    color: rgba(0, 78, 53, 1);
+.latest__card h1,h2,p {
+    color: rgba(0, 78, 53, 1) !important;
 
 }
 
@@ -161,7 +176,6 @@ p {
 
 .social{
     width: 100%;
-    height: 80px;
     background-color: rgba(0, 78, 53, 1);
 }
 
@@ -189,7 +203,7 @@ footer h1{
     font-size: 110px;
     color: rgba(0, 78, 53, 1);
     font-weight: 400;
-    height: 500px;
+    padding: 50px 0;
     display: flex;
     align-items: center;
 }
