@@ -1,5 +1,126 @@
 body{
     margin: 0;
     padding: 0;
+    background-color: #27272744;
+    overflow-x: hidden;
     
+}
+
+.centre{
+    margin: 0 auto !important;
+}
+
+.who{
+    font-size: 64px;
+    font-family: 'Clash Display', sans-serif;
+    font-weight: 700;
+}
+
+.who__img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.menu h1{
+    font-family: 'Clash Display', sans-serif;
+    font-weight: 700;
+}
+
+.menu__button button{
+    padding: 16px;
+    font-family: 'Cabinet Grotesk', sans-serif;
+    border: 1px solid gray;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 16px;
+}
+
+.menu__button button:hover{
+    background-color: rgba(0, 0, 0, 0.459);
+    border: 1px solid rgba(0, 0, 0, 0.459);;
+    
+}
+
+.menu__card h1{
+    margin: 10px 0;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Clash Display', sans-serif;    
+}
+
+.menu__card img{
+    width: 100%;
+    height: 80%;
+    object-fit: contain;
+}
+
+.our__team{
+    width: 100%;
+    padding: 3%;
+    background-color: #B7BCA9;
+}
+
+.our__team h1{
+    font-size: 64px;
+    font-family: 'Clash Display', sans-serif;
+    font-weight: 700;
+}
+
+.our__card{
+    width: 90%;
+}
+
+.our__card h3{
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Clash Display', sans-serif;
+    font-weight: 700;
+}
+
+.our__card img{
+    width: 100%;
+    height: 70%;
+    object-fit: contain;
+}
+
+.event h1{
+    font-family: 'Clash Display', sans-serif;
+    font-weight: 700;
+    font-size: 64px;
+    text-align: center;
+
+}
+.event__img{
+    width: 90%;
+
+}
+.event__img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: 10px;
+    
+}
+
+footer{
+    width: 100%;
+    height: 30vh;
+    background-color: #B7BCA9;
+}
+
+footer a{
+    color: black;
+    text-decoration: none;
+
+}
+footer img{
+    margin-top: 20px;
+    width: 100%;
+    height: 40%;
+    object-fit: contain;
+}
+.bi{
+    font-size: 36px;
 }
