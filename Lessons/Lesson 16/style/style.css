@@ -1,0 +1,434 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: aliceblue;
+}
+
+h1,
+h2,
+h3,
+p,
+a {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container
+================== */
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+
+}
+
+/*   Header 
+================== */
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 20px auto;
+
+}
+
+.header__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 0 20px;
+
+}
+
+.header__logo img {
+    height: 60px;
+
+
+}
+
+.header__inner select {
+    width: 90px;
+    border: none;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: aliceblue;
+
+}
+
+.header__inner select:hover {
+    border-bottom: 2px solid red;
+    color: red;
+
+}
+
+
+.header__inner h4 {
+    color: black;
+}
+
+button {
+
+    width: 150px;
+    height: 50px;
+    border: none;
+    background-color: #e23f45;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    transition-duration: .5s;
+}
+
+button:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    background-color: #d41b21;
+
+}
+
+/*      Intro 
+===================== */
+
+.intro {
+    height: 110vh;
+    background: url("../img/Mask\ Group.png") center no-repeat;
+    background-size: cover;
+}
+
+.background__color {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.432);
+}
+
+.intro__content {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    color: white;
+    width: 50%;
+    position: absolute;
+    top: 250px;
+
+
+}
+
+.intro__content h1 {
+    font-size: 56px;
+    font-weight: 600;
+    margin: 20px 0;
+}
+
+.intro__content h2 {
+    font-size: 36px;
+    width: 100%;
+    margin: 20px 0;
+
+}
+
+.intro__content p {
+    font-size: 22px;
+    margin: 0 40px;
+}
+
+/*   Option
+==================== */
+.option1 {
+    position: relative;
+    width: 100%;
+    height: 200px;
+}
+
+
+.option {
+    width: 1190px;
+    height: 200px;
+    background-color: rgba(33, 51, 66, 1);
+    border-radius: 10px;
+    position: absolute;
+    top: -55%;
+
+}
+
+.option__nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 20%;
+}
+
+.option__nav a {
+    display: flex;
+    justify-content: center;
+    width: 150px;
+    color: white;
+    text-decoration: none;
+
+}
+
+.option__nav a:hover {
+    border-bottom: 2px solid red;
+    padding: 20px 0;
+}
+
+.option__setting {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 94%;
+    height: 50px;
+    background-color: #fff;
+    margin: 20px auto;
+    border-radius: 10px;
+
+}
+
+.option__setting select {
+    font-size: 18px;
+    width: 150px;
+    height: 100%;
+    border: none;
+    border-right: 2px solid rgba(128, 128, 128, 0.63);
+
+
+}
+
+.option__setting select:last-child {
+    width: 300px;
+    border: none;
+
+}
+
+.option__footer {
+    display: flex;
+    width: 94%;
+    height: 30%;
+    position: relative;
+
+}
+
+.option__footer a {
+    height: 40px;
+    width: 150px;
+    color: #fff;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border: 1px solid rgba(255, 255, 255, 0.541);
+    border-radius: 5px;
+    margin-left: 450px;
+
+}
+
+.option__footer a:first-child {
+    margin-left: 30px;
+    width: 300px;
+
+}
+
+.option__footer button {
+    height: 42px;
+    position: absolute;
+    right: 0;
+}
+
+.option__footer a img {
+    margin: 10px;
+}
+
+.option__card {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    width: 100%;
+    height: 350px;
+    background-color: aliceblue;
+}
+
+.opt__card1 {
+    display: block;
+    width: 250px;
+    height: 150px;
+    background-color: rgb(229, 248, 242);
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+
+}
+
+.opt__card1 p {
+    margin-top: 50px;
+}
+
+.opt__card1 h1 {
+    font-weight: 500;
+}
+
+.opt__card1:last-child h1 {
+    font-size: 24px;
+}
+
+.opt__card1:last-child p {
+    margin-top: 30px;
+}
+
+
+/*      Last Added
+===================== */
+
+
+.last_add {
+    width: 100%;
+    height: 160vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 150px;
+}
+
+.last_add__header {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.last_add__card {
+    width: 28%;
+    height: 65vh;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    transition-duration: .5s;
+}
+
+.last_add__card:hover {
+    box-shadow: 0 10px 50px rgba(119, 152, 181, 0.4);
+
+}
+
+.add_card__img {
+    width: 96%;
+    height: 50%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.add_card__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.add_card__adress {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 25px;
+}
+
+.add_card__adress img {
+    width: 16px;
+    height: 16px;
+    margin: 5px;
+}
+
+.add_card__adress a {
+    color: rgb(6, 219, 219);
+}
+
+.infor__area {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 20px;
+    margin-top: 40px;
+}
+
+.infor__area img,
+.infor__cost img {
+    width: 12px;
+    height: 12px;
+    margin: 5px;
+}
+
+.infor__cost {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 20px;
+
+}
+
+.last_add__buttons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    margin: 50px 0;
+}
+
+.last_add__buttons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #e23f45;
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid #e23f45;
+    width: 40%;
+    height: 50px;
+    border-radius: 5px;
+    transition-duration: .3s;
+}
+
+.last_add__buttons a:hover {
+    background-color: #d41b21;
+    color: #fff;
+}
+
+.wave img {
+    width: 90%;
+    margin: 300px 0;
+}
+
+
+/*     Calculator
+===================== */
+
+.calculator{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.calculator__header{
+    color: rgba(33, 51, 66, 1);
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 50px auto;
+    
+}
