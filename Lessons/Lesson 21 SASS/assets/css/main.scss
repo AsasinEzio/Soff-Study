@@ -1,35 +1,99 @@
-@mixin d-flex{
+$btn-color: rgba(60, 189, 150, 1);
+$anybody:  'Anybody', cursive;
+$red-hat:  'Red Hat Text', sans-serif;
+$text-color: rgba(32, 73, 69, 1);
+@mixin buttons {
+    background-color: $btn-color;
+    color: white;
+    font-size: 20px;
+    padding: 5px 30px;
+    border-radius: 10px;
+}
+
+@mixin dflex($jcc, $aic, $fwrap) {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: $jcc;
+    align-items: $aic;
+    flex-wrap: $fwrap;
+
+
 }
 
-
-body{
-    background-color: blueviolet;
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-nav{
-    @include d-flex();
-    width: calc(100% - 40px);
-    height: 100px;
-    padding: 10px 20px;
-    & img{
-        width: 10%;
+h1,h2,h3,p,a{
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    & img {
+        width: 15%;
         height: 100%;
-        object-fit: contain;
     }
-    .nav__item{
-        @include d-flex();
-        color: aqua;
-        width: 40%;
+}
+
+.navbar_button {
+    @include buttons();
+
+}
+
+.intro {
+    width: 100%;
+    height: 90vh;
+
+    & .container {
         height: 100%;
-        & a{
-            color: aqua;
-            text-decoration: none;
-            font-size: 24px;
+        
+        @include dflex(start, center, wrap)
+    }
+
+    & form {
+        & .check {
+            @include buttons();
+
         }
 
     }
+
+}
+
+.intro__text{
+    & h1{
+        font-size: 90px;
+        font-weight: 700;
+        font-family: $anybody;
+        color: $text-color;
+        margin: 30px 0;
+    }
+    & .span{
+        @include dflex(center, center,nowrap);
+        width: 500px;
+        height: 120px;
+        background-color: rgba(227, 249, 231, 1);
+        border: 5px solid $btn-color;
+        & h2 {
+            font-size: 70px;
+            font-weight: 700;
+            font-family: $anybody;
+            color: $text-color;
+        }
+    }
+
+    & p{
+        width: 70%;
+        font-size: 25px;
+        opacity: .7;
+        font-family: $red-hat;
+        font-weight: 400;
+        line-height: 40px;
+        margin: 20px 0;
+
+    }
+    
 
 }
