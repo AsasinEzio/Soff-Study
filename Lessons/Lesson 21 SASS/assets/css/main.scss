@@ -203,3 +203,68 @@ nav {
         font-size: 64px;
     }
 }
+
+.trucking {
+    width: 100%;
+    height: 80vh;
+}
+
+.trucking__content {
+    height: 100%;
+    margin-top: 150px;
+    @include dflex(space-between, center, wrap);
+
+    & img {
+        width: 100%;
+    }
+}
+
+.truck__text {
+
+    & h1 {
+        font-family: $anybody;
+        font-size: 40px;
+        color: $text-color;
+        font-weight: 600;
+        margin: 40px 0;
+    }
+
+    & p {
+        @include p();
+        font-size: 18px;
+    }
+
+    & button {
+        background-color: $btn-color;
+        color: white;
+        margin: 50px 0;
+    }
+}
+
+.our__special {
+    width: 100%;
+    height: 70vh;
+}
+
+.our__card {
+    border: none;
+    margin-top: 100px;
+
+    & h5 {
+        font-family: $anybody;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 24px;
+    }
+
+    & p {
+        text-align: start;
+        font-size: 16px;
+    }
+
+    & .bi {
+        font-size: 64px;
+        color: rgba(54, 255, 47, 0.411);
+
+    }
+}

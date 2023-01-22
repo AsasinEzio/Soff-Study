@@ -173,4 +173,65 @@ nav img {
 }
 .card__img .bi {
   font-size: 64px;
+}
+
+.trucking {
+  width: 100%;
+  height: 80vh;
+}
+
+.trucking__content {
+  height: 100%;
+  margin-top: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.trucking__content img {
+  width: 100%;
+}
+
+.truck__text h1 {
+  font-family: "Anybody", cursive;
+  font-size: 40px;
+  color: rgb(32, 73, 69);
+  font-weight: 600;
+  margin: 40px 0;
+}
+.truck__text p {
+  font-size: 25px;
+  opacity: 0.7;
+  font-family: "Red Hat Text", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+}
+.truck__text button {
+  background-color: rgb(60, 189, 150);
+  color: white;
+  margin: 50px 0;
+}
+
+.our__special {
+  width: 100%;
+  height: 70vh;
+}
+
+.our__card {
+  border: none;
+  margin-top: 100px;
+}
+.our__card h5 {
+  font-family: "Anybody", cursive;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+}
+.our__card p {
+  text-align: start;
+  font-size: 16px;
+}
+.our__card .bi {
+  font-size: 64px;
+  color: rgba(54, 255, 47, 0.411);
 }/*# sourceMappingURL=main.css.map */
