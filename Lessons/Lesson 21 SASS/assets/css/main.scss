@@ -1,3 +1,5 @@
+// Mixins ==============
+
 $btn-color: rgba(60, 189, 150, 1);
 $anybody: 'Anybody', cursive;
 $red-hat: 'Red Hat Text', sans-serif;
@@ -41,6 +43,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    position: relative;
 }
 
 h1,
@@ -51,7 +54,17 @@ a {
     margin: 0;
     padding: 0;
 }
+.top__sprite{
+        width: 35%;
+    
+}
 
+.bottom__sprite{
+    bottom: 0;
+    position: absolute;
+    width: 40%;
+}
+//  Navbar ===============
 nav {
     & img {
         width: 15%;
@@ -63,6 +76,8 @@ nav {
     @include buttons();
 
 }
+
+// Intro ==============
 
 .intro {
     width: 100%;
@@ -125,10 +140,10 @@ nav {
         top: 50px;
         z-index: -99;
         width: 45%;
-
-        // object-fit: contain;
     }
 }
+
+// Sponsor ===============
 
 .sponsor {
     width: 100%;
@@ -145,7 +160,7 @@ nav {
 
 }
 
-
+// How works ==============
 .how__works {
     width: 100%;
     height: 80vh;
@@ -203,11 +218,24 @@ nav {
     }
 }
 
+// Trucking ===============
 .trucking {
     width: 100%;
     height: 80vh;
+    position: relative;
 }
-
+.truck__sprite{
+    width: 30%;
+    position: absolute;
+    z-index: -99;
+    top: 100px;
+}
+.truck__sprite_2{
+    width: 13%;
+    position: absolute;
+    right: 0;
+    top: -200px;
+}
 .trucking__content {
     height: 100%;
     margin-top: 150px;
@@ -237,9 +265,11 @@ nav {
     }
 }
 
+// Our Specialists ==============
 .our__special {
     width: 100%;
     height: 70vh;
+    margin-top: 200px;
 }
 
 .our__card {
@@ -267,6 +297,7 @@ nav {
     }
 }
 
+// Calculator ============
 .calculator {
     width: 100%;
     height: 600px;
@@ -274,7 +305,7 @@ nav {
     border-radius: 50px;
     padding: 50px 80px;
     position: relative;
-    margin: 150px 0;
+    margin: 150px 0 50px 0 ;
 
 }
 
@@ -297,23 +328,127 @@ nav {
         bottom: 0;
     }
 }
+
 .calculator__form {
     background-color: #fff;
     padding: 30px;
     border-radius: 30px;
+
     & h1 {
         font-size: 28px;
         color: black;
     }
 }
+
 .form__header {
     border-radius: 10px;
     width: 80px;
     height: 80px;
     background-color: $btn-color;
     @include dflex(center, center, nowrap);
+
     & .bi {
         font-size: 48px;
         color: white
+    }
+}
+
+// Follow =================
+.follow {
+    width: 100%;
+    height: 600px;
+    @include dflex(center, center, wrap);
+    position: relative;
+}
+
+
+.follow__text {
+    @include dflex(start, center, nowrap);
+
+    & p {
+        @include p();
+        font-size: 18px;
+        margin: 40px 0;
+    }
+
+    & button {
+        background-color: $btn-color;
+        color: white;
+    }
+}
+
+.follow__img {
+    & img {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 50%;
+    }
+}
+
+// Costumer ==============
+.costumer__header {
+    & h1 {
+        text-align: center;
+        margin: 50px 0;
+    }
+
+    & p {
+        @include p();
+        font-size: 24px;
+        text-align: center;
+        margin-bottom: 100px;
+    }
+}
+
+.accordion-button {
+    background: linear-gradient(90deg, #E3F9E7 0%, rgba(227, 249, 231, 0) 100%);
+}
+
+
+.costumer__content {
+    @include dflex(center, center, wrap);
+    padding: 0 100px;
+    margin: 0 auto;
+    background-color: #E3F9E7;
+
+    & .bi-quote {
+        color: $text-color;
+        font-size: 108px;
+    }
+
+    & p {
+        @include p();
+        text-align: center;
+        margin: 50px 0;
+    }
+}
+
+
+//  Footer
+footer {
+    & p {
+        @include p();
+        font-size: 18px;
+        line-height: 50px;
+    }
+
+    & .btn {
+        background-color: $btn-color;
+        color: white;
+    }
+}
+
+.copyright {
+    border-top: 5px dotted grey;
+    padding: 30px 0;
+    & .col-3{
+        @include dflex(space-between, center, wrap);
+    }
+
+    & .bi {
+        font-size: 28px;
+        margin-left: 10px;
+        opacity: .7;
     }
 }
