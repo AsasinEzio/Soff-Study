@@ -1,3 +1,13 @@
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Anybody", cursive;
+  color: rgb(32, 73, 69);
+  font-weight: 700;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -52,9 +62,6 @@ nav img {
 .intro__text h1 {
   font-size: 70px;
   width: 100%;
-  font-weight: 700;
-  font-family: "Anybody", cursive;
-  color: rgb(32, 73, 69);
   margin: 30px 0;
 }
 .intro__text .span {
@@ -69,9 +76,6 @@ nav img {
 }
 .intro__text .span h2 {
   font-size: 60px;
-  font-weight: 700;
-  font-family: "Anybody", cursive;
-  color: rgb(32, 73, 69);
 }
 .intro__text p {
   font-size: 25px;
@@ -124,9 +128,6 @@ nav img {
 }
 .how__header h1 {
   font-size: 54px;
-  font-weight: 700;
-  color: rgb(32, 73, 69);
-  font-family: "Anybody", cursive;
   text-align: center;
 }
 .how__header p {
@@ -156,8 +157,6 @@ nav img {
 .card h2 {
   text-align: center;
   font-size: 24px;
-  font-family: "Anybody", cursive;
-  color: rgb(32, 73, 69);
 }
 
 .card__img {
@@ -193,10 +192,7 @@ nav img {
 }
 
 .truck__text h1 {
-  font-family: "Anybody", cursive;
   font-size: 40px;
-  color: rgb(32, 73, 69);
-  font-weight: 600;
   margin: 40px 0;
 }
 .truck__text p {
@@ -220,12 +216,14 @@ nav img {
 .our__card {
   border: none;
   margin-top: 100px;
+  box-shadow: 0 0 10px rgba(102, 230, 247, 0.548);
+  padding: 50px 30px;
+  border-radius: 20px;
 }
 .our__card h5 {
-  font-family: "Anybody", cursive;
   font-size: 24px;
-  font-weight: 700;
   line-height: 24px;
+  color: black;
 }
 .our__card p {
   text-align: start;
@@ -234,4 +232,56 @@ nav img {
 .our__card .bi {
   font-size: 64px;
   color: rgba(54, 255, 47, 0.411);
+}
+
+.calculator {
+  width: 100%;
+  height: 600px;
+  background-color: rgb(227, 249, 231);
+  border-radius: 50px;
+  padding: 50px 80px;
+  position: relative;
+  margin: 150px 0;
+}
+
+.calculator__text h1 {
+  font-size: 48px;
+  margin-bottom: 30px;
+}
+.calculator__text p {
+  font-size: 25px;
+  opacity: 0.7;
+  font-family: "Red Hat Text", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+}
+.calculator__text img {
+  width: 25%;
+  position: absolute;
+  bottom: 0;
+}
+
+.calculator__form {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 30px;
+}
+.calculator__form h1 {
+  font-size: 28px;
+  color: black;
+}
+
+.form__header {
+  border-radius: 10px;
+  width: 80px;
+  height: 80px;
+  background-color: rgb(60, 189, 150);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.form__header .bi {
+  font-size: 48px;
+  color: white;
 }/*# sourceMappingURL=main.css.map */

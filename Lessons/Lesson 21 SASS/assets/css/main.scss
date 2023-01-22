@@ -27,6 +27,16 @@ $text-color: rgba(32, 73, 69, 1);
     font-weight: 400;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: $anybody;
+    color: $text-color;
+    font-weight: 700;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -81,9 +91,6 @@ nav {
     & h1 {
         font-size: 70px;
         width: 100%;
-        font-weight: 700;
-        font-family: $anybody;
-        color: $text-color;
         margin: 30px 0;
     }
 
@@ -96,9 +103,6 @@ nav {
 
         & h2 {
             font-size: 60px;
-            font-weight: 700;
-            font-family: $anybody;
-            color: $text-color;
         }
     }
 
@@ -155,9 +159,6 @@ nav {
 
     & h1 {
         font-size: 54px;
-        font-weight: 700;
-        color: $text-color;
-        font-family: $anybody;
         text-align: center;
 
     }
@@ -185,8 +186,6 @@ nav {
     & h2 {
         text-align: center;
         font-size: 24px;
-        font-family: $anybody;
-        color: $text-color;
 
     }
 }
@@ -222,10 +221,7 @@ nav {
 .truck__text {
 
     & h1 {
-        font-family: $anybody;
         font-size: 40px;
-        color: $text-color;
-        font-weight: 600;
         margin: 40px 0;
     }
 
@@ -249,12 +245,14 @@ nav {
 .our__card {
     border: none;
     margin-top: 100px;
+    box-shadow: 0 0 10px rgba(102, 230, 247, 0.548);
+    padding: 50px 30px;
+    border-radius: 20px;
 
     & h5 {
-        font-family: $anybody;
         font-size: 24px;
-        font-weight: 700;
         line-height: 24px;
+        color: black;
     }
 
     & p {
@@ -266,5 +264,56 @@ nav {
         font-size: 64px;
         color: rgba(54, 255, 47, 0.411);
 
+    }
+}
+
+.calculator {
+    width: 100%;
+    height: 600px;
+    background-color: rgba(227, 249, 231, 1);
+    border-radius: 50px;
+    padding: 50px 80px;
+    position: relative;
+    margin: 150px 0;
+
+}
+
+.calculator__text {
+
+    & h1 {
+        font-size: 48px;
+        margin-bottom: 30px;
+
+    }
+
+    & p {
+        @include p();
+        font-size: 24px;
+    }
+
+    & img {
+        width: 25%;
+        position: absolute;
+        bottom: 0;
+    }
+}
+.calculator__form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 30px;
+    & h1 {
+        font-size: 28px;
+        color: black;
+    }
+}
+.form__header {
+    border-radius: 10px;
+    width: 80px;
+    height: 80px;
+    background-color: $btn-color;
+    @include dflex(center, center, nowrap);
+    & .bi {
+        font-size: 48px;
+        color: white
     }
 }
