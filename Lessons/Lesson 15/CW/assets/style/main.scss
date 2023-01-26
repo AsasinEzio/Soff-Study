@@ -1,5 +1,206 @@
-body{
+@mixin dflex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: rgb(196, 196, 196);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+a,
+p {
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+// Intro ==================
+.intro {
+    width: 100%;
+    height: 600px;
+    margin: 50px 0;
+}
+
+.intro__text {
+    @include dflex();
+    justify-content: start;
+    padding: 50px 20px;
+
+    & h2 {
+        width: 100%;
+        font-size: 30px;
+        font-weight: 500;
+    }
+
+    & h2::before {
+        content: url(../img/Line\ 1.png);
+        margin-right: 10px;
+    }
+
+    & h1 {
+        font-size: 72px;
+        font-weight: 400;
+
+        & span {
+            font-weight: 500;
+        }
+    }
+
+    & h3 {
+        font-size: 48px;
+        font-weight: 300;
+    }
+
+    & p {
+        font-size: 24px;
+    }
+}
+
+.intro__img {
+    display: flex;
+    place-items: center;
+    padding: 10px;
+
+    & img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+
+    }
+}
+
+.intro__links {
+    & h2 {
+        font-weight: 100;
+        font-size: 24px;
+    }
+}
+
+// Video block
+
+.video {
+    width: 80%;
+    height: 800px;
+    margin: 150px auto;
+
+    & img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    & p {
+        font-size: 36px;
+        margin: 50px 0;
+    }
+}
+
+// What i do
+
+.doing {
+    @include dflex();
+    width: 100%;
+    height: 600px;
+    margin: 100px auto;
+}
+
+.doing__header {
+    @include dflex();
+    width: 100%;
+    height: 20%;
+
+    & h1 {
+        font-size: 56px;
+        text-align: center;
+        font-weight: 500;
+    }
+}
+
+.doing__items {
+    @include dflex();
+    justify-content: space-around;
+    width: 90%;
+    height: 80%;
+    margin-top: 50px;
+
+    & .card {
+        background-color: rgb(15, 14, 14);
+        color: rgb(167, 166, 166);
+        height: 90%;
+        border: none;
+        border-radius: 10px;
+        transition: .3s;
+
+        & a {
+            border: 1px solid rgb(219, 216, 7);
+            color: rgb(219, 216, 7);
+        }
+
+        & a:hover {
+            border: 1px solid rgb(219, 216, 7);
+            background-color: rgb(219, 216, 7);
+            color: black;
+        }
+
+        & img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+
+        }
+
+    }
+
+    & .card:hover {
+        background-color: gray;
+        color: rgb(32, 32, 32);
+    }
+
+}
+
+// Portfolio album
+
+
+.portfolio {
+    width: 100%;
+    @include dflex();
+}
+
+.portfoilo__header {
+    height: 200px;
+}
+
+.portfolio__album {
+    width: 90%;
+    height: 600px;
+    overflow-y: scroll;
+    margin: 100px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+
+    & img {
+        width: 100%;
+    }
+
+}
+
+.portfolio__album::-webkit-scrollbar {
+    width: 10px;
+    background-color: rgb(145, 127, 145);
+
+}
+
+.portfolio__album::-webkit-scrollbar-thumb {
+    background-color: #fff;
 }
