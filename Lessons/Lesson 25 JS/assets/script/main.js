@@ -8,19 +8,18 @@
 // console.log( "A va B ning ayirmasi=" + (a - b));
 // console.log( "A va B ning ko'paytmasi=" + (a * b));
 // console.log( "A va B ning bo'linmasi=" + (a / b));
+// console.log( "A ning kvadrati=" + (a ** 2));
+// console.log( "B ning kvadrati=" + (b ** 2));
 
 // 2-mashq
 
 // A, B va C sonlari berilgan. A ni qiymati B ga, B ni qiymati C ga, C ni qiymati A ga almashtirilsin. A, B va C sonlarining yangi qiymatlari ekranga chiqarilsin.
 
-// let a,
-//     b,
-//     c,
-//     d,
-//     e;
-// a = 1;
-// b = 2;
-// c = 3;
+// let a = 1;
+// let b = 2;
+// let c = 3;
+// let d;
+// let e;
 
 // console.log(a, b, c);
 
@@ -49,9 +48,3 @@
 // s = N / 60;
 // c = N % 60;
 // console.log("Kun boshlanganidan " + Math.round(s) + ` soat ${c} daqiqa o'tdi`);
-
-
-
-
-
-
