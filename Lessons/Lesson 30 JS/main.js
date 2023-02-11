@@ -66,7 +66,7 @@ let users = [
 // users.pop();
 // console.log(users);
 
-// 5 - mashq    
+// 5 - mashq
 
 // for (i = 0; i < users.length - 1; i++) {
 //     if (users[i].name == "Matvey") {
@@ -89,6 +89,17 @@ let users = [
 //     hobbies: prompt("New user hobbies"),
 //     id: +prompt("New user id")
 // })
+
+// 7,8 - mashq 
+
+
+// for(i=0; i<news.length-1; i++){
+//     console.log(`${(news[i].categories)}`+`  ${(news[i].title)}`);
+// }
+
+// 9 - mashq
+
+// console.log(news[4].categories);
 
 
 
