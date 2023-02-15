@@ -68,16 +68,16 @@ let users = [
 
 // 5 - mashq
 
-for (i = 0; i < users.length - 1; i++) {
-    if (users[i].name == "Matvey") {
-        users[i].name = "Timofey"
-        users[i].age = 34
-        users[i].number = "897897980"
-        users[i].email = "timofey3443@mail.ru"
-        users[i].hobbies = ["Tanki", "Panki", "Ranki"]
-        users[i].id = `${i}`
-    }
-}
+// for (i = 0; i < users.length - 1; i++) {
+//     if (users[i].name == "Matvey") {
+//         users[i].name = "Timofey"
+//         users[i].age = 34
+//         users[i].number = "897897980"
+//         users[i].email = "timofey3443@mail.ru"
+//         users[i].hobbies = ["Tanki", "Panki", "Ranki"]
+//         users[i].id = `${i}`
+//     }
+// }
 
 // 6 - mashq
 
@@ -92,6 +92,11 @@ for (i = 0; i < users.length - 1; i++) {
 
 // 7,8 - mashq 
 
+// let a = +prompt("Son kirit")
+
+// for(i=0; i<a; i++){
+//     console.log(`${(news[i].categories)}`+`  ${(news[i].title)}`);
+// }
 
 // for(i=0; i<news.length-1; i++){
 //     console.log(`${(news[i].categories)}`+`  ${(news[i].title)}`);
