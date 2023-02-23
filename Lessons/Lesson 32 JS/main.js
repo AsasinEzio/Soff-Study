@@ -102,10 +102,3 @@ function calculate() {
     }
     alert(`${sum2} sums from you :)`)
 }
-
-
-// movies.map(i => {
-//     if(i.item_count >= 1000) {
-//     console.log(i.name);
-// }
-// }) 

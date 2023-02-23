@@ -8,8 +8,16 @@
 // }
 
 
-function darkMode() {
-    let a = document.querySelector("body")
+// function darkMode() {
+//     let a = document.querySelector("body")
 
-    a.classList.toggle("bg-dark")
+//     a.classList.toggle("bg-dark")
+// }
+
+let div = document.querySelector("div");
+function word() {
+    let word = prompt("enter some word or sentences");
+    let newContent = document.createElement("p");
+    newContent.textContent = word;
+    div.append(newContent);
 }
