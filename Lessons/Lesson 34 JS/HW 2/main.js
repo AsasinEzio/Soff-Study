@@ -1,16 +1,16 @@
-let div = document.createElement("div");
+let content = document.querySelector(".content")
 
 function showCards() {
+    content.innerHTML = " "
     news.map((i, index) => {
         let card = document.createElement("div");
-        card.classList.add("card");
+        card.classList.add("card", "col-3");
         
         let img = document.createElement("img");
         img.src = i.photo;
         img.alt = i.photo;
-        img.classList.add("w-50");
 
-        let title = document.createElement("h3");
+        let title = document.createElement("h4");
         title.innerHTML = i.title;
 
         let btn = document.createElement("button");
@@ -20,7 +20,8 @@ function showCards() {
 
         card.appendChild(img);
         card.appendChild(title);
-        div.appendChild(card);
+        card.appendChild(btn);
+        content.appendChild(card);
 
     });
 
@@ -29,7 +30,7 @@ function showCards() {
 
 function dell(num) {
     news.splice(num, 1);
-    showList();
+    showCards();
 }
 
 function addItem() {
